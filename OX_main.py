@@ -42,7 +42,7 @@ else:
     mode = "medium"
     print("\nInvalid choice — defaulting to Medium mode.")
 
-variable = input("\nWhat will you choose? O or X?/nFor a random choice hit enter: ").capitalize()
+variable = input("\nWhat will you choose? O or X?\nFor a random choice hit enter: ").capitalize()
 
 if len(variable) == 0 or variable[0] not in ["X", "O"]:
     variable = random.choice(["O", "X"])
